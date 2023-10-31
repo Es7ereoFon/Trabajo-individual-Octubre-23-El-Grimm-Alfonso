@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Wesen</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1> Wesen</h1>
+    </header>
+    <div class="container">
+        <div class="list-container">
+            <ul id="wesen-list"></ul>
+        </div>
+        <div class="details-container">
+            <h2>Formulario Wesen</h2>
+            <form id="wesen-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required><br>
+
+                <label for="imagen">URL de la Imagen:</label>
+                <input type="url" id="imagen" required><br>
+
+                <label for="tipo">Tipo:</label>
+                <select id="tipo" required>
+                    <option value="" disabled selected>Seleccione un tipo</option>
+                    <option value="lobo">Lobo</option>
+                    <option value="cánido">Cánido</option>
+                    <option value="felino">Felino</option>
+                </select><br>
+
+                <label for="peligrosidad">Peligrosidad:</label>
+                <select id="peligrosidad" required>
+                    <option value="" disabled selected>Selecciona peligrosidad</option>
+                    <option value="pacífico">Pacífico</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="peligroso">Peligroso</option>
+                    <option value="violento">Violento</option>
+                </select><br>
+
+                <label for="descripcion">Descripción del Aspecto:</label>
+                <textarea id="descripcion" required></textarea><br>
+
+                <label for="notas">Notas</label>
+                <textarea id="notas"></textarea><br>
+
+                <button type="button" id="guardar-btn">Guardar</button>
+                <button type="button" id="borrar-btn">Borrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="Javascript.js"></script>
+</body>
+</html>
